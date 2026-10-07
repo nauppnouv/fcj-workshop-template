@@ -1,14 +1,14 @@
 ---
 title: "Week 1 Worklog"
-date: 2024-01-01
+date: 2026-10-07
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+{{% notice warning %}}
+⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
+{{% /notice %}}
 
 ### Week 1 Objectives:
 
@@ -55,3 +55,8 @@ pre: " <b> 1.1. </b> "
 
 * Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
 * ...
+
+
+![IMG_1270](/images/1-Worklog/1.1-Week1/IMG_1270.jpg)
+
+![IMG_4400](/images/1-Worklog/1.1-Week1/IMG_4400.jpg)

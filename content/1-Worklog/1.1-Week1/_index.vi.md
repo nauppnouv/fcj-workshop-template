@@ -1,14 +1,14 @@
 ---
 title: "Worklog Tuần 1"
-date: 2024-01-01
+date: 2026-10-07
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
+
 {{% notice warning %}}
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
-
 
 ### Mục tiêu tuần 1:
 
@@ -57,3 +57,8 @@ pre: " <b> 1.1. </b> "
 * ...
 
 
+
+
+![IMG_1270](/images/1-Worklog/1.1-Week1/IMG_1270.jpg)
+
+![IMG_4400](/images/1-Worklog/1.1-Week1/IMG_4400.jpg)
