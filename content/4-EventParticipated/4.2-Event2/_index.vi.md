@@ -12,7 +12,7 @@ pre: " <b> 4.2. </b> "
 | --- | --- |
 | **Tên sự kiện** | AWS Cloud and AI Day Hanoi 2026 |
 | **Ngày** | 29/09/2026 |
-| **Thời gian** | 08:00–17:00 (giờ Việt Nam, UTC+7), theo lịch watch party |
+| **Thời gian** | 08:00–17:00 (UTC+7) |
 | **Hình thức** | Watch party tại TP.HCM, theo dõi chương trình phát từ Hà Nội |
 | **Địa điểm tham dự** | Tầng 26, Bitexco Financial Tower, 2 Hải Triều, phường Sài Gòn, TP.HCM |
 | **Vai trò** | Người tham dự |
