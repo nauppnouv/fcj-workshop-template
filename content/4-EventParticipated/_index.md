@@ -11,7 +11,7 @@ During my internship, I attended two technology events and learned more about cl
 ### [Event 1: Buildrathon Kickoff](4.1-Event1/)<br>
 &emsp;**Event Name:** Buildrathon Kickoff: Code the Future with CMC Global<br>
 
-&emsp;**Date & Time:** 09:00, September 26, 2026<br>
+&emsp;**Date & Time:** 09:00 a.m., September 26, 2026<br>
 
 &emsp;**Location:** Bitexco Financial Tower, Ho Chi Minh City<br>
 
@@ -22,7 +22,7 @@ During my internship, I attended two technology events and learned more about cl
 ### [Event 2: AWS Cloud and AI Day Hanoi 2026 — HCMC Watch Party](4.2-Event2/)<br>
 &emsp;**Event Name:** AWS Cloud and AI Day Hanoi 2026 — HCMC Watch Party<br>
 
-&emsp;**Date & Time:** 09:00, September 29, 2026<br>
+&emsp;**Date & Time:** 09:00 a.m., September 29, 2026<br>
 
 &emsp;**Location:** Ho Chi Minh City watch party, 26th Floor, Bitexco Financial Tower, 2 Hai Trieu Street<br>
 
