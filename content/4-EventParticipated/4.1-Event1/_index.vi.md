@@ -25,7 +25,7 @@ pre: " <b> 4.1. </b> "
 | Thứ tự | Diễn giả | Chức danh | Phần chia sẻ tại sự kiện |
 | --- | --- | --- | --- |
 | 1 | [Nguyễn Gia Hưng](https://www.linkedin.com/in/jotaguy/) | Head of Solutions Architect, AWS Việt Nam và Campuchia | Mở đầu chương trình, giới thiệu Buildrathon, mục đích và định hướng của chương trình. |
-| 2 | [Nhật Trường Bui (Truong Bui)](https://www.linkedin.com/in/dominicbui0000/) | Tech Lead, CMC Global | Tiếp nối bằng phần chia sẻ kỹ thuật, trong đó có ví dụ kiến trúc Slack bot ứng dụng AI, và trả lời câu hỏi. |
+| 2 | [Nhật Trường Bùi](https://www.linkedin.com/in/dominicbui0000/) | Tech Lead, CMC Global | Tiếp nối bằng phần chia sẻ kỹ thuật, trong đó có ví dụ kiến trúc Slack bot ứng dụng AI, và trả lời câu hỏi. |
 
 Phần mở đầu đặt bối cảnh cho chương trình, sau đó phần chia sẻ kỹ thuật đưa người tham dự đến một kiến trúc phần mềm cụ thể. Trình tự này giúp kết nối nội dung giới thiệu Buildrathon với một ví dụ trong thực tế chuyên môn.
 
