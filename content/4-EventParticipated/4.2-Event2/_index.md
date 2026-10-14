@@ -12,7 +12,7 @@ pre: " <b> 4.2. </b> "
 | --- | --- |
 | **Event** | AWS Cloud and AI Day Hanoi 2026 |
 | **Date** | September 29, 2026 |
-| **Time** | 8:00 a.m.–5:00 p.m. (ICT, UTC+7), per the watch party schedule |
+| **Time** | 8:00 a.m.–5:00 p.m. (UTC+7) |
 | **Format** | Ho Chi Minh City watch party following the program streamed from Hanoi |
 | **Watch party venue** | 26th floor, Bitexco Financial Tower, 2 Hai Trieu Street, Saigon Ward, Ho Chi Minh City |
 | **My role** | Attendee |
