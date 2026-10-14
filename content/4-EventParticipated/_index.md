@@ -26,7 +26,7 @@ During my internship, I participated in two events and gained new technical know
 ### [Event 1: Buildrathon Kickoff](4.1-Event1/)<br>
 &emsp;**Event Name:** Buildrathon Kickoff: Code the Future with CMC Global<br>
 
-&emsp;**Date & Time:** 09:00–11:20, September 26, 2026<br>
+&emsp;**Date & Time:** 09:00, September 26, 2026<br>
 
 &emsp;**Location:** Bitexco Financial Tower, Ho Chi Minh City<br>
 

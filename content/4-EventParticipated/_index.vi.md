@@ -27,7 +27,7 @@ Trong quá trình thực tập, em đã tham gia hai sự kiện và tích lũy 
 ### [Event 1: Buildrathon Kickoff](4.1-Event1/)
 &emsp;**Tên sự kiện:** Buildrathon Kickoff: Code the Future with CMC Global
 
-&emsp;**Thời gian:** 09:00–11:20, ngày 26/09/2026
+&emsp;**Thời gian:** 09:00, ngày 26/09/2026
 
 &emsp;**Địa điểm:** Bitexco Financial Tower, Thành phố Hồ Chí Minh
 
