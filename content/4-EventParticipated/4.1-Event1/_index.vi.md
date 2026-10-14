@@ -9,7 +9,7 @@ pre: " <b> 4.1. </b> "
 ### Thông tin sự kiện
 
 - **Ngày tổ chức:** 26/09/2026
-- **Giờ bắt đầu công bố:** 09:00 (giờ Việt Nam, UTC+7)
+- **Giờ bắt đầu công bố:** 09:00 (UTC+7)
 - **Địa điểm:** Bitexco Financial Tower, Thành phố Hồ Chí Minh
 - **Vai trò:** Người tham dự
 - **Trang sự kiện:** [Buildrathon Kickoff: Code the Future with CMC Global](https://luma.com/8fe9vvps)
