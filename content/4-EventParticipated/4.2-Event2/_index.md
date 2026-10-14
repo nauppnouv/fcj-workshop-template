@@ -1,7 +1,7 @@
 ---
 title: "AWS Cloud and AI Day Hanoi 2026 — HCMC Watch Party"
 date: 2026-09-29
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
@@ -90,7 +90,21 @@ I plan to choose a small use case for practicing an AI-assisted workflow. Before
 
 ### Watch party experience
 
-I attended the AWS Cloud and AI Day through the Ho Chi Minh City watch party and followed the keynote streamed from Hanoi. It gave me a way to learn from AWS, business leaders, and product specialists alongside the local builder community. The keynote is the portion I can document from the supplied transcript; other sessions and hands-on activities are not included in my personal event recap.
+I attended the AWS Cloud and AI Day through the Ho Chi Minh City watch party and followed the keynote streamed from Hanoi. It gave me a way to learn from AWS, business leaders, and product specialists alongside the local builder community. The analysis in this report focuses on the keynote; the photos below document the watch party room, attendees, and content shown on the screens in Ho Chi Minh City.
+
+### Watch party photos
+
+![Overview of the Ho Chi Minh City watch party room with attendees and screens showing the program.](/images/4-EventParticipated/4.2-Event2/watch-party-room.jpg)
+
+*The Ho Chi Minh City watch party room, where attendees followed the program streamed from Hanoi.*
+
+![Group photo of attendees holding AWS Cloud and AI Day Hanoi badges at the watch party.](/images/4-EventParticipated/4.2-Event2/watch-party-group.jpg)
+
+*A photo with fellow attendees at the Ho Chi Minh City watch party.*
+
+![Watch party screen showing the Context Lives Outside the Ticket slide with the Techcom Securities logo.](/images/4-EventParticipated/4.2-Event2/streamed-context-slide.jpg)
+
+*Techcom Securities’ “Context Lives Outside the Ticket” slide shown on the screen in Ho Chi Minh City. It illustrates bringing requirements, documentation, and team rules together in a task package.*
 
 ### References
 

@@ -1,7 +1,7 @@
 ---
 title: "AWS Cloud and AI Day Hanoi 2026 — HCMC Watch Party"
 date: 2026-09-29
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
@@ -90,7 +90,21 @@ Tôi dự định chọn một use case nhỏ để thực hành thiết kế lu
 
 ### Trải nghiệm tham dự
 
-Tôi tham dự AWS Cloud and AI Day qua watch party tại TP.HCM và theo dõi keynote từ Hà Nội. Hình thức này giúp tôi tiếp cận các chia sẻ từ AWS, lãnh đạo doanh nghiệp và chuyên gia sản phẩm ngay tại cộng đồng địa phương. Phần tôi có nội dung để tổng hợp là keynote; tôi chưa đưa các phiên chuyên đề hoặc hoạt động hands-on vào trải nghiệm cá nhân.
+Tôi tham dự AWS Cloud and AI Day qua watch party tại TP.HCM và theo dõi keynote từ Hà Nội. Hình thức này giúp tôi tiếp cận các chia sẻ từ AWS, lãnh đạo doanh nghiệp và chuyên gia sản phẩm ngay tại cộng đồng địa phương. Nội dung phân tích trong bài tập trung vào keynote; các ảnh bên dưới ghi lại không gian watch party, người tham dự và nội dung được phát trên màn hình tại TP.HCM.
+
+### Hình ảnh tại watch party
+
+![Toàn cảnh phòng watch party tại TP.HCM với người tham dự và các màn hình phát chương trình.](/images/4-EventParticipated/4.2-Event2/watch-party-room.jpg)
+
+*Không gian watch party tại TP.HCM, nơi người tham dự theo dõi chương trình được phát từ Hà Nội.*
+
+![Ảnh chụp nhóm người tham dự với thẻ AWS Cloud and AI Day Hanoi tại điểm watch party.](/images/4-EventParticipated/4.2-Event2/watch-party-group.jpg)
+
+*Ảnh chụp cùng người tham dự tại điểm watch party TP.HCM.*
+
+![Màn hình watch party hiển thị slide Context Lives Outside the Ticket với logo Techcom Securities.](/images/4-EventParticipated/4.2-Event2/streamed-context-slide.jpg)
+
+*Slide “Context Lives Outside the Ticket” của Techcom Securities được phát trên màn hình tại TP.HCM. Slide minh họa việc tập hợp ngữ cảnh từ yêu cầu, tài liệu và quy tắc của đội ngũ vào một task package.*
 
 ### Tài liệu tham khảo
 
