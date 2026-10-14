@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Event Report: Buildrathon Kickoff: Code the Future with CMC Global
-
 ### Event information
 
 - **Date:** September 26, 2026
