@@ -22,7 +22,7 @@ Trong quá trình thực tập, tôi đã tham gia hai sự kiện công nghệ,
 ### [Event 2: AWS Cloud and AI Day Hanoi 2026 — HCMC Watch Party](4.2-Event2/)
 &emsp;**Tên sự kiện:** AWS Cloud and AI Day Hanoi 2026 — HCMC Watch Party
 
-&emsp;**Thời gian:** Ngày 29/09/2026; keynote bắt đầu lúc 09:00
+&emsp;**Thời gian:** 09:00, Ngày 29/09/2026
 
 &emsp;**Địa điểm:** Watch party tại tầng 26, Bitexco Financial Tower, 2 Hải Triều, TP.HCM
 
