@@ -9,7 +9,7 @@ pre: " <b> 4.1. </b> "
 ### Event information
 
 - **Date:** September 26, 2026
-- **Published start time:** 9:00 a.m. (Vietnam time, UTC+7)
+- **Published start time:** 9:00 a.m. (UTC+7)
 - **Location:** Bitexco Financial Tower, Ho Chi Minh City
 - **Role:** Attendee
 - **Event page:** [Buildrathon Kickoff: Code the Future with CMC Global](https://luma.com/8fe9vvps)
