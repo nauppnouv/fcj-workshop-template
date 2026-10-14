@@ -12,10 +12,10 @@ pre: " <b> 4.2. </b> "
 | --- | --- |
 | **Tên sự kiện** | AWS Cloud and AI Day Hanoi 2026 |
 | **Ngày** | 29/09/2026 |
+| **Thời gian** | 08:00–17:00 (giờ Việt Nam, UTC+7), theo lịch watch party |
 | **Hình thức** | Watch party tại TP.HCM, theo dõi chương trình phát từ Hà Nội |
 | **Địa điểm tham dự** | Tầng 26, Bitexco Financial Tower, 2 Hải Triều, phường Sài Gòn, TP.HCM |
 | **Vai trò** | Người tham dự |
-| **Keynote** | 09:00 theo chương trình AWS; watch party công bố khung giờ 08:00–17:00 |
 | **Nguồn sự kiện** | [AWS Cloud and AI Day Hanoi](https://aws.amazon.com/vi/events/cloud-day-hanoi/) · [Thông tin watch party](https://apj.awsevents.com/sites/aws-cloud-day-hanoi-watch-party-attendee) |
 
 Ngày 29/09/2026, tôi tham gia watch party AWS Cloud and AI Day Hanoi tại TP.HCM và theo dõi keynote được phát từ Hà Nội. Các chia sẻ tập trung vào cách doanh nghiệp ứng dụng Cloud và AI, những nền tảng kỹ thuật hỗ trợ dịch vụ vận hành, và yêu cầu kiểm chứng phần mềm khi AI tham gia sâu hơn vào quá trình phát triển. Những chủ đề này giúp tôi kết nối công nghệ được giới thiệu với các vấn đề thực tế như bảo mật, độ tin cậy và trách nhiệm của đội ngũ xây dựng sản phẩm.

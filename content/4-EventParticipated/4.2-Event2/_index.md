@@ -12,10 +12,10 @@ pre: " <b> 4.2. </b> "
 | --- | --- |
 | **Event** | AWS Cloud and AI Day Hanoi 2026 |
 | **Date** | September 29, 2026 |
+| **Time** | 8:00 a.m.–5:00 p.m. (ICT, UTC+7), per the watch party schedule |
 | **Format** | Ho Chi Minh City watch party following the program streamed from Hanoi |
 | **Watch party venue** | 26th floor, Bitexco Financial Tower, 2 Hai Trieu Street, Saigon Ward, Ho Chi Minh City |
 | **My role** | Attendee |
-| **Keynote** | 9:00 a.m. in the AWS agenda; the watch party was listed from 8:00 a.m. to 5:00 p.m. |
 | **Event links** | [AWS Cloud and AI Day Hanoi](https://aws.amazon.com/events/cloud-day-hanoi/) · [Watch party information](https://apj.awsevents.com/sites/aws-cloud-day-hanoi-watch-party-attendee) |
 
 On September 29, 2026, I attended the AWS Cloud and AI Day Hanoi watch party in Ho Chi Minh City and followed the keynote streamed from Hanoi. The presentations explored how organizations are applying cloud and AI, the engineering foundations behind reliable services, and the need to validate software as AI takes on a larger role in development. These topics helped me connect new technologies with practical concerns such as security, reliability, and engineering accountability.
