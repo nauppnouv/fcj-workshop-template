@@ -6,22 +6,7 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** for your report, including this warning.
-{{% /notice %}}
-
-> In this section, you should list and describe in detail the events you have participated in during your internship or work experience.  
-> 
-> Each event should be presented in the format Event 1, Event 2, Event 3…, along with the following details:
-> * Event name
-> * Date and time
-> * Location (if applicable)
-> * Your role in the event (attendee, event support, speaker, etc.)
-> * A brief description of the event’s content and main activities
-> * Outcomes or value gained (lessons learned, new skills, contribution to the team/project)
-> * This listing helps demonstrate your actual participation as well as the soft skills and experience you have gained from each event.
-
-During my internship, I participated in two events and gained new technical knowledge and valuable experiences.
+During my internship, I attended two technology events and learned more about cloud development, AI, and engineering practices.
 
 ### [Event 1: Buildrathon Kickoff](4.1-Event1/)<br>
 &emsp;**Event Name:** Buildrathon Kickoff: Code the Future with CMC Global<br>
@@ -34,11 +19,13 @@ During my internship, I participated in two events and gained new technical know
 
 ---
 
-### [Event 2](4.2-Event2/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
+### [Event 2: AWS Cloud and AI Day Hanoi 2026 — HCMC Watch Party](4.2-Event2/)<br>
+&emsp;**Event Name:** AWS Cloud and AI Day Hanoi 2026 — HCMC Watch Party<br>
 
-&emsp;**Date & Time:** 09:00, August 13, 2025  
+&emsp;**Date & Time:** September 29, 2026; keynote began at 9:00 a.m.<br>
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+&emsp;**Location:** Ho Chi Minh City watch party, 26th Floor, Bitexco Financial Tower, 2 Hai Trieu Street<br>
 
-&emsp;**Role:** Attendee  
+&emsp;**Role:** Watch party attendee<br>
+
+&emsp;**Topics and value:** Followed the keynote on enterprise AI, cloud infrastructure, invisible engineering, and validating AI-assisted software. A key takeaway was to pair development speed with appropriate access controls, evidence-based testing, and human accountability.<br>

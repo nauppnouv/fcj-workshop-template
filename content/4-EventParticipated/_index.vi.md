@@ -6,23 +6,7 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-> Trong phần này, các bạn cần liệt kê và mô tả chi tiết các sự kiện (event) mà mình đã tham gia trong suốt quá trình thực tập hoặc làm việc. 
-> 
-> Mỗi sự kiện nên được trình bày theo định dạng Event 1, Event 2, Event 3…, kèm theo các thông tin:
-> * Tên sự kiện
-> * Thời gian tổ chức
-> * Địa điểm (nếu có)
-> * Vai trò của bạn trong sự kiện (người tham dự, hỗ trợ tổ chức, diễn giả, v.v.)
-> * Mô tả ngắn gọn nội dung và hoạt động chính trong sự kiện
-> * Kết quả hoặc giá trị đạt được (bài học, kỹ năng mới, đóng góp cho nhóm/dự án)
-> * Việc liệt kê này giúp thể hiện rõ sự tham gia thực tế của bạn, cũng như các kỹ năng mềm và kinh nghiệm bạn đã tích lũy qua từng sự kiện.
-
-
-Trong quá trình thực tập, em đã tham gia hai sự kiện và tích lũy thêm kiến thức chuyên môn cùng những trải nghiệm đáng nhớ.
+Trong quá trình thực tập, tôi đã tham gia hai sự kiện công nghệ, qua đó tìm hiểu thêm về phát triển Cloud, AI và các thực hành kỹ thuật.
 
 ### [Event 1: Buildrathon Kickoff](4.1-Event1/)
 &emsp;**Tên sự kiện:** Buildrathon Kickoff: Code the Future with CMC Global
@@ -35,12 +19,14 @@ Trong quá trình thực tập, em đã tham gia hai sự kiện và tích lũy 
 
 
 
-### [Event 2](4.2-Event2/)
-&emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
+### [Event 2: AWS Cloud and AI Day Hanoi 2026 — HCMC Watch Party](4.2-Event2/)
+&emsp;**Tên sự kiện:** AWS Cloud and AI Day Hanoi 2026 — HCMC Watch Party
 
-&emsp;**Thời gian:** 09:00 ngày 13/08/2025
+&emsp;**Thời gian:** Ngày 29/09/2026; keynote bắt đầu lúc 09:00
 
-&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+&emsp;**Địa điểm:** Watch party tại tầng 26, Bitexco Financial Tower, 2 Hải Triều, TP.HCM
 
-&emsp;**Vai trò trong sự kiện:** Người tham dự 
+&emsp;**Vai trò trong sự kiện:** Người tham dự watch party
+
+&emsp;**Nội dung và giá trị:** Theo dõi keynote về ứng dụng AI trong doanh nghiệp, hạ tầng Cloud, invisible engineering và kiểm chứng phần mềm có AI hỗ trợ. Bài học trọng tâm là gắn tốc độ phát triển với quyền truy cập phù hợp, kiểm thử có bằng chứng và trách nhiệm của con người.
 

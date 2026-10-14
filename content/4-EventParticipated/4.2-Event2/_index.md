@@ -1,126 +1,100 @@
 ---
-title: "Event 2"
-date: 2024-01-01
+title: "AWS Cloud and AI Day Hanoi 2026 — HCMC Watch Party"
+date: 2026-09-29
 weight: 1
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+### Event information
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+| Item | Details |
+| --- | --- |
+| **Event** | AWS Cloud and AI Day Hanoi 2026 |
+| **Date** | September 29, 2026 |
+| **Format** | Ho Chi Minh City watch party following the program streamed from Hanoi |
+| **Watch party venue** | 26th floor, Bitexco Financial Tower, 2 Hai Trieu Street, Saigon Ward, Ho Chi Minh City |
+| **My role** | Attendee |
+| **Keynote** | 9:00 a.m. in the AWS agenda; the watch party was listed from 8:00 a.m. to 5:00 p.m. |
+| **Event links** | [AWS Cloud and AI Day Hanoi](https://aws.amazon.com/events/cloud-day-hanoi/) · [Watch party information](https://apj.awsevents.com/sites/aws-cloud-day-hanoi-watch-party-attendee) |
 
-### Event Objectives
+On September 29, 2026, I attended the AWS Cloud and AI Day Hanoi watch party in Ho Chi Minh City and followed the keynote streamed from Hanoi. The presentations explored how organizations are applying cloud and AI, the engineering foundations behind reliable services, and the need to validate software as AI takes on a larger role in development. These topics helped me connect new technologies with practical concerns such as security, reliability, and engineering accountability.
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+AWS promoted more than 30 sessions at the Hanoi event on agentic AI, data and analytics, application modernization, and industry solutions, alongside an expo and workshops. The watch party page listed the keynote and sessions from the Builders x AI track. This report focuses on the keynote, which is the portion covered by the transcript I provided.
 
-### Speakers
+### Event objectives
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- Learn how organizations in Vietnam are bringing cloud and AI into business processes.
+- Understand the platform, security, and governance foundations needed to move AI beyond experimentation.
+- Explore how AI-assisted development should be supported by testing, evidence, and accountable release decisions.
+- Identify cloud and AI topics to study further through personal projects.
 
-### Key Highlights
+### Keynote speakers
 
-#### Identifying the drawbacks of legacy application architecture
+| Order | Speaker | Title | Main topic |
+| --- | --- | --- | --- |
+| 1 | Hoang Minh | Deputy Minister of Science and Technology | Digital infrastructure, compute capacity, and Vietnam’s cloud and AI ecosystem. |
+| 2 | Jennifer Wicks | U.S. Ambassador to Vietnam | Technology cooperation and cloud’s role in digital transformation. |
+| 3 | Eric Yeo | Country General Manager Malaysia, Vietnam, Indochina, AWS | Cloud and AI in Vietnam, customer examples, infrastructure, and skills development. |
+| 4 | Dr. Jens Lottner | Chief Executive Officer, Techcombank | Integrating AI into enterprise workflows and developing staff capabilities. |
+| 5 | Dr. Werner Vogels | Chief Technology Officer, Amazon.com | Invisible engineering, cloud foundations, and system design decisions. |
+| 6 | Mai Le | Director of Product Management, Katalon | Software quality validation as AI accelerates development. |
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+AWS lists all six as keynote speakers. The transcript contains very little of Deputy Minister Hoang Minh’s opening remarks, so that part is supplemented by the [Ministry of Science and Technology’s event report](https://mst.gov.vn/ai-viet-nam-tu-mo-rong-ha-tang-den-bai-toan-bien-cong-nghe-thanh-gia-tri-19726093007364899.htm). The times below refer to the supplied keynote transcript.
 
-#### Transitioning to modern application architecture – Microservices
+### Key highlights
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+#### 1. Digital infrastructure and Vietnam’s cloud and AI ecosystem
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+The opening remarks placed AI in a broader context: creating value from technology calls for digital infrastructure, compute capacity, skilled people, and collaboration. Deputy Minister Hoang Minh emphasized an ecosystem in which businesses, government, universities, and research organizations contribute to developing technology. Ambassador Jennifer Wicks spoke about cloud’s role in innovation, competitiveness, and technology cooperation between Vietnam and the United States. Source for the Deputy Minister’s remarks: [Ministry of Science and Technology](https://mst.gov.vn/ai-viet-nam-tu-mo-rong-ha-tang-den-bai-toan-bien-cong-nghe-thanh-gia-tri-19726093007364899.htm).
 
-#### Domain-Driven Design (DDD)
+#### 2. Cloud and AI applications tied to customer needs
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+Eric Yeo presented customer examples showing how AI can support concrete activities, including healthcare information analysis, in-store product display monitoring, and agricultural operations. My takeaway is to start with the problem to solve, then consider the data, cloud services, and measures needed to evaluate the result. He also discussed the Hanoi AWS Local Zone as an infrastructure option closer to local users. AWS had announced the Local Zone’s availability in June 2026, before this event.
 
-#### Event-Driven Architecture
+#### 3. Techcombank: integrating AI into workflows
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+Dr. Jens Lottner described AI as a way to change how work is organized, rather than simply add a standalone tool. Examples included coordinating software requirements, development, and testing; using an agent to connect operations and customer service when resolving incidents; and helping frontline staff prepare information for customers.
 
-#### Compute Evolution
+The presentation also highlighted orchestration platforms, access governance, model selection, staff training, and outcome measurement. The name of one software development tool is unclear in the transcript, so I have described its role without assigning an unverified product name. These examples and any reported improvements belong to the speaker’s presentation; they are not systems I implemented.
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+#### 4. Werner Vogels: the invisible engineering behind services
 
-#### Amazon Q Developer
+Dr. Werner Vogels used database and infrastructure stories to explain the engineering decisions that end users often do not see. One lesson was to understand how an application accesses data before choosing an architecture. Sound design starts with real requirements and access patterns.
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+Cloud examples illustrated several layers of this work: the AWS Nitro System supports infrastructure operations; Lambda and Firecracker illustrate event-driven workloads in isolated environments; and Lambda SnapStart uses snapshots of initialized environments to improve startup performance for supported runtimes. The discussion of the Amazon Time Sync Service and ClockBound extended the topic to time in distributed systems: timestamps need uncertainty information so applications can reason about event ordering. [AWS Lambda SnapStart documentation](https://docs.aws.amazon.com/lambda/latest/dg/snapstart.html) · [AWS ClockBound](https://github.com/aws/clock-bound).
 
-### Key Takeaways
+This session helped me see how cloud services depend on engineering choices involving performance, isolation, time, and reliability. Understanding these foundations helps engineers select solutions based on system requirements instead of relying on service names alone.
 
-#### Design Mindset
+#### 5. Katalon: validation must keep pace with software development
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+Mai Le described the validation gap between AI-assisted development speed and the ability to test software. When code and changes are produced faster than they can be assessed, risk can reach users. An AI agent therefore needs connected context from requirements, code changes, test cases, defects, and operational data to determine what should be tested.
 
-#### Technical Architecture
+In Katalon’s platform example, the speaker mentioned Amazon EKS, Amazon RDS, Amazon S3, and Amazon Kinesis as the foundation for its application, data, and telemetry; Amazon Bedrock for governed model access; and Amazon Bedrock AgentCore Runtime as an isolated environment for agents and approved tools. The key point was that a confident AI answer does not prove that software works. Teams need test results, logs, screenshots, videos, and telemetry. People still define risk boundaries, review exceptions, and decide whether to release. References: [Katalon True Platform](https://docs.katalon.com/katalon-platform/security-and-privacy-faq) · [AWS AgentCore Runtime](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agents-tools-runtime.html).
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+#### 6. Validation debt and engineering accountability
 
-#### Modernization Strategy
+In the closing remarks, Werner Vogels returned to validation debt: the work that accumulates when software changes are produced faster than they can be verified. I took away the need to pair development speed with disciplined testing, traceable evidence, and clear responsibility. Foundation work may be invisible to users, but it contributes to more dependable software.
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+### Key takeaways
 
-### Applying to Work
+- **Start with the problem:** define the workflow, users, and intended outcome before choosing an AI model or service.
+- **Design governance into the architecture:** agents need appropriate permissions, defined tools, and observable activity.
+- **Validate output with evidence:** tests, logs, and telemetry help teams assess what actually happened.
+- **Understand engineering trade-offs:** performance, isolation, cost, and reliability all matter when designing a system.
+- **Keep people accountable:** AI can assist with development and testing, while engineers remain responsible for evaluating risk and release decisions.
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+### Next steps
 
-### Event Experience
+I plan to choose a small use case for practicing an AI-assisted workflow. Before testing it, I will define its inputs and outputs, set limits on tool access, write validation criteria, and retain logs and results for review. This is a future learning plan, not hands-on work completed at the watch party.
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+### Watch party experience
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+I attended the AWS Cloud and AI Day through the Ho Chi Minh City watch party and followed the keynote streamed from Hanoi. It gave me a way to learn from AWS, business leaders, and product specialists alongside the local builder community. The keynote is the portion I can document from the supplied transcript; other sessions and hands-on activities are not included in my personal event recap.
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+### References
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
-
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+- [AWS Cloud and AI Day Hanoi — event and speaker information](https://aws.amazon.com/events/cloud-day-hanoi/)
+- [AWS Cloud Day Hanoi — Ho Chi Minh City watch party](https://apj.awsevents.com/sites/aws-cloud-day-hanoi-watch-party-attendee)
+- [Vietnam Ministry of Science and Technology — Deputy Minister Hoang Minh’s remarks](https://mst.gov.vn/ai-viet-nam-tu-mo-rong-ha-tang-den-bai-toan-bien-cong-nghe-thanh-gia-tri-19726093007364899.htm)
+- [Kha Van on AWS Builder Center — community perspective on cloud and AI in Hanoi](https://builder.aws.com/content/3KMpKxUhRFeSlclpmwu5ZxBQBYL/aws-cloud-and-ai-day-hanoi-2026-building-for-the-next-phase-of-cloud-and-ai)
