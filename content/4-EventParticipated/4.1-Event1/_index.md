@@ -25,7 +25,7 @@ pre: " <b> 4.1. </b> "
 | Order | Speaker | Position | Contribution to the event |
 | --- | --- | --- | --- |
 | 1 | [Nguyễn Gia Hưng](https://www.linkedin.com/in/jotaguy/) | Head of Solutions Architect, AWS Vietnam and Cambodia | Opened the program, introduced Buildrathon, and explained its purpose and direction. |
-| 2 | [Nhật Trường Bui (Truong Bui)](https://www.linkedin.com/in/dominicbui0000/) | Tech Lead, CMC Global | Followed with a technical presentation, including an example AI-enabled Slack bot architecture, and answered questions. |
+| 2 | [Nhật Trường Bùi](https://www.linkedin.com/in/dominicbui0000/) | Tech Lead, CMC Global | Followed with a technical presentation, including an example AI-enabled Slack bot architecture, and answered questions. |
 
 The opening presentation established the context for the program. The subsequent session brought the discussion to a concrete software architecture. This sequence helped connect the program introduction with an example from technical practice.
 
