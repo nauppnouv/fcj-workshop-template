@@ -5,55 +5,46 @@ weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+Trong tuần thứ ba (28/09/2026–02/10/2026), tôi học cách kết nối nhiều VPC, tìm hiểu EC2 và các lựa chọn lưu trữ, sau đó thực hành quy trình backup và kiểm tra khôi phục bằng AWS Backup. Tôi ghi lại nội dung theo từng ngày, từ VPC Peering đến cleanup tài nguyên.
 
-### Mục tiêu tuần 3:
+### Mục tiêu tuần 3
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Hiểu cách kết nối hai VPC qua VPC Peering, cấu hình route và phân giải DNS giữa các mạng.
+- Tìm hiểu Transit Gateway, VPC attachments và cách phối hợp VPC route tables với TGW route tables.
+- Nắm tiêu chí chọn EC2 instance types, AMI, key pair và snapshot theo workload.
+- Phân biệt EBS với instance store, đồng thời tìm hiểu EFS và FSx cho nhu cầu lưu trữ tệp.
+- Hiểu vai trò của User Data, instance metadata, EC2 Auto Scaling, Lightsail và AWS MGN.
+- Thiết lập backup plan và kiểm tra restore; nhận diện trách nhiệm cleanup của từng tài nguyên.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các công việc đã hoàn thành trong tuần
 
+| Thứ | Công việc đã hoàn thành | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | Đã thiết lập môi trường hai VPC cho Lab19, cấu hình Security Group và Network ACL, tạo VPC Peering, thêm route hai phía, bật Cross-Peer DNS; kiểm tra kết nối qua private IP và dọn tài nguyên lab. | 28/09/2026 | 28/09/2026 | [Playlist Module 02, Lab19 — 9 video](https://www.youtube.com/playlist?list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i); [FCJ Lab19](https://000019.awsstudygroup.com/); [VPC peering](https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-basics.html), [peering DNS](https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-dns.html) |
+| 3 | Đã thiết lập mô hình bốn VPC kết nối qua Transit Gateway; cấu hình attachments, association/propagation và route tables; kiểm tra luồng kết nối giữa EC2 bằng bài lab và phân tích đường đi theo cấu hình bằng Reachability Analyzer; dọn tài nguyên. | 29/09/2026 | 29/09/2026 | [Playlist Module 02, Lab20 — 7 video](https://www.youtube.com/playlist?list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i); [FCJ Lab20](https://000020.awsstudygroup.com/); [How Transit Gateway works](https://docs.aws.amazon.com/vpc/latest/tgw/how-transit-gateways-work.html), [Reachability Analyzer](https://docs.aws.amazon.com/vpc/latest/reachability/how-reachability-analyzer-works.html) |
+| 4 | Đã học khái niệm compute VM, tiêu chí chọn EC2 instance type, AMI, key pair và backup; so sánh Amazon EBS với instance store về cách gắn kết, vòng đời dữ liệu và tình huống sử dụng. | 30/09/2026 | 30/09/2026 | [Compute VM](https://www.youtube.com/watch?v=-t5h4N6vfBs), [AMI / Backup / Key Pair](https://www.youtube.com/watch?v=yAR6QRT3N1k), [EBS](https://www.youtube.com/watch?v=hKr_TfGP7NY), [Instance store](https://www.youtube.com/watch?v=6IHNDJ85aoQ); [EC2 instance types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html), [EBS](https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html), [Instance store persistence](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-store-lifetime.html) |
+| 5 | Đã tìm hiểu User Data và instance metadata, cơ chế EC2 Auto Scaling; so sánh vai trò của EFS, FSx, Lightsail và AWS Application Migration Service theo nhu cầu khởi tạo, co giãn, lưu trữ tệp và di chuyển ứng dụng. | 01/10/2026 | 01/10/2026 | [User Data](https://www.youtube.com/watch?v=_v_43Wi7zjo), [Metadata](https://www.youtube.com/watch?v=Ew3QRaKJQSA), [EC2 Auto Scaling](https://www.youtube.com/watch?v=bbLcPitXJSY), [Compute services overview](https://www.youtube.com/watch?v=hFVYG8WqfU0); [EC2 User Data](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html), [EC2 instance types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html) |
+| 6 | Đã chuẩn bị hạ tầng lab AWS Backup, tạo backup plan/vault và gán tài nguyên; kiểm tra backup job, quy trình restore có Lambda và thông báo, xem restore jobs/log, rồi cleanup các tài nguyên theo phạm vi quản lý. | 02/10/2026 | 02/10/2026 | [FCJ Lab13 — Introduction](https://000013.awsstudygroup.com/1-introduce/), [Deploy infrastructure](https://000013.awsstudygroup.com/2-prerequiste/2.2-deployinfras/), [Create Backup plan](https://000013.awsstudygroup.com/3-createbackupplan/), [Test Restore](https://000013.awsstudygroup.com/5-testrestore/), [Cleanup](https://000013.awsstudygroup.com/6-cleanup/); [S3/template preparation](https://000013.awsstudygroup.com/2-prerequiste/2.1-creates3bucket/), [notifications](https://000013.awsstudygroup.com/4-enablenoti/) |
 
-### Kết quả đạt được tuần 3:
+### Kết quả đạt được tuần 3
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Hoàn thành gói học gồm 24 video YouTube và 6 trang tài liệu FCJ/AWS bổ sung, được tổng hợp thành năm nhóm hoạt động theo ngày.
+- Cấu hình VPC Peering trong lab và hiểu các điều kiện cần cho kết nối giữa hai VPC, gồm CIDR không chồng lấn, route hai phía và quy tắc bảo mật phù hợp.
+- Thiết lập mô hình nhiều VPC qua Transit Gateway; phân biệt route trong VPC với route trong TGW, cùng vai trò của attachment, association và propagation.
+- Tổng hợp tiêu chí lựa chọn EC2 instance type và hiểu khác biệt về tính bền dữ liệu giữa EBS và instance store.
+- Phân biệt User Data với metadata; nắm mục đích của Auto Scaling, EFS, FSx, Lightsail và MGN ở mức tổng quan.
+- Tạo backup plan trong lab, theo dõi backup/restore jobs và log; hiểu vì sao cần kiểm tra khả năng khôi phục ứng dụng và cleanup cả tài nguyên ngoài stack.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+### Bài học rút ra sau khi học
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- Tôi rút ra rằng trạng thái VPC Peering active chưa đủ để đảm bảo ứng dụng kết nối được. Tôi cần xem CIDR, route hai phía, Security Group, Network ACL và cách phân giải tên miền theo đúng luồng.
+- Tôi phân biệt được VPC route table với TGW route table. Association chọn bảng TGW xử lý traffic từ attachment, còn propagation đưa các route của attachment vào bảng được chọn.
+- Reachability Analyzer giúp tôi phân tích tính khả thi theo cấu hình mạng; kết quả của công cụ không thay thế kiểm tra kết nối thực tế của ứng dụng.
+- Tôi hiểu lựa chọn EBS hay instance store phụ thuộc vào hiệu năng và yêu cầu lưu dữ liệu. Instance store phù hợp dữ liệu tạm như cache; dữ liệu cần giữ lâu dài phải nằm trên storage bền vững phù hợp.
+- Tôi rút ra AMI và User Data hỗ trợ khởi tạo các instance nhất quán, trong khi metadata cung cấp thông tin của instance cho quy trình vận hành. Đây là những khái niệm hữu ích khi tìm hiểu Auto Scaling.
+- Tôi hiểu tạo backup thành công và khôi phục workload thành công là hai kết quả khác nhau. Cần xác định tiêu chí kiểm tra restore và quản lý vòng đời tài nguyên được tạo trong quá trình kiểm thử.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+### Bước tiếp theo
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+Ở Tuần 4, tôi chuyển sang S3, CloudFront và các chủ đề lưu trữ tiếp theo trong lộ trình học AWS.
