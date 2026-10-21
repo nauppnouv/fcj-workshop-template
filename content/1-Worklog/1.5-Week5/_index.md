@@ -6,47 +6,48 @@ chapter: false
 pre: " <b> 1.5. </b> "
 ---
 
-During the fifth week (October 12–16, 2026), I studied VM Import/Export, reviewed the S3 File Gateway workflow, and learned how to operate Amazon FSx for Windows File Server. I focused on migration prerequisites and permissions, hybrid file access, Windows file shares, performance monitoring, and data protection.
+During the fifth week (October 12–16, 2026), I began preparing a workshop with the FCAJ Hackathon System team. I joined brainstorming, discussed the scope, outlined an initial approach, and received direction for my Backend 2 responsibilities ahead of Week 6. Alongside this work, I strengthened my understanding of security responsibilities, AWS Identity and Access Management (IAM), and cost management to support planning.
 
 ### Week 5 Objectives
 
-- Explain the VM Import/Export workflow and distinguish an imported Amazon Machine Image (AMI) from a running EC2 instance.
-- Identify the IAM permissions and S3 requirements involved in importing or exporting a virtual machine.
-- Review how S3 File Gateway presents SMB/NFS file access backed by Amazon S3.
-- Compare FSx for Windows File Server storage and deployment choices for Windows workloads.
-- Understand how monitoring, quotas, data deduplication, shadow copies, and capacity changes support file server operations.
-- Recognize the resources and measurements to check when validating a migration or storage lab.
+- Clarify the problem, intended users, and workshop goals with the team.
+- Define the proof-of-concept (PoC) scope and distinguish it from possible extensions.
+- Relate EC2, VPC, and S3 concepts to the initial deployment approach and data flow.
+- Strengthen my understanding of IAM policies and roles, and distinguish AWS permissions from application user roles.
+- Receive direction for Backend 2 and identify the inputs needed for deployment, messaging, and cost estimation.
+- Consolidate the plan and dependencies before starting Week 6 work.
 
 ### Completed Daily Worklog
 
 | Day | Work Completed | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 2 | Studied how to prepare a virtual machine, export its virtual disk, and stage it in S3 for VM Import/Export. Reviewed the distinction between the caller's IAM permissions, `iam:PassRole`, and the `vmimport` service role, including the role's trust and permissions policies. | 10/12/2026 | 10/12/2026 | FCJ Lab14: [Prepare a VM](https://000014.awsstudygroup.com/1-deploy-application-server/), [export from a virtual environment](https://000014.awsstudygroup.com/2-import-vm-to-aws/1-export-vm-from-virtual-env/), [upload a VM to AWS](https://000014.awsstudygroup.com/2-import-vm-to-aws/2-upload-vm-to-aws/), [import a VM](https://000014.awsstudygroup.com/2-import-vm-to-aws/3-import-vm-to-ami/); [AWS VM Import/Export permissions](https://docs.aws.amazon.com/vm-import/latest/userguide/required-permissions.html), [supported boot modes](https://docs.aws.amazon.com/vm-import/latest/userguide/prerequisites.html) |
-| 3 | Studied the import task flow from a virtual disk to an AMI and then an EC2 instance, as well as exporting an eligible instance to S3. Reviewed how to track task status, the destination bucket's export requirements, and the AMI, snapshots, volumes, and S3 objects to consider during cleanup. | 10/13/2026 | 10/13/2026 | FCJ Lab14: [Deploy an instance from an AMI](https://000014.awsstudygroup.com/2-import-vm-to-aws/4-deploy-imported-vm/), [configure S3 for export](https://000014.awsstudygroup.com/3-export-vm-from-aws/1-config-s3-for-exporting/), [export an instance](https://000014.awsstudygroup.com/3-export-vm-from-aws/2-export-from-instance/), [clean up resources](https://000014.awsstudygroup.com/4-clean-up/); [AWS export prerequisites](https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport-prerequisites.html) |
-| 4 | Reviewed the S3 File Gateway workflow previously covered in Week 4: gateway appliance, cache, SMB file share, and the path from a Windows client to S3. Compared this file interface with FSx for Windows File Server and examined why changes made directly in S3 may require a cache inventory refresh. | 10/14/2026 | 10/14/2026 | FCJ Lab24: [prepare S3](https://000024.awsstudygroup.com/1-prepare/1.1-creates3/), [prepare the gateway instance](https://000024.awsstudygroup.com/1-prepare/1.2-createstoragegwinstance/), [create a gateway](https://000024.awsstudygroup.com/2-useawsstoragegw/2.1-createstoragegw/), [create a file share](https://000024.awsstudygroup.com/2-useawsstoragegw/2.2-createfileshare/), [mount the share](https://000024.awsstudygroup.com/2-useawsstoragegw/2.3-mountfileshare/), [clean up](https://000024.awsstudygroup.com/3-cleanup/); [AWS cache refresh](https://docs.aws.amazon.com/filegateway/latest/files3/refresh-cache.html) |
-| 5 | Studied FSx for Windows File Server, Active Directory integration, Multi-AZ deployment, and SSD/HDD storage choices. Reviewed the lab's environment and SMB share workflow, and learned how DiskSpd/fio measurements such as throughput, IOPS, and latency help assess a workload without treating sample measurements as personal results. | 10/15/2026 | 10/15/2026 | [AWS FSx overview](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html); FCJ Lab25: [prepare the environment](https://000025.awsstudygroup.com/2-prerequiste/2.1-cloudformation/), [create SSD Multi-AZ](https://000025.awsstudygroup.com/2-prerequiste/2.2-create-maz-ssd-file-system/), [create HDD Multi-AZ](https://000025.awsstudygroup.com/2-prerequiste/2.3-create-maz-hdd-file-system/), [create file shares](https://000025.awsstudygroup.com/3-create-new-file-shares/), [test performance](https://000025.awsstudygroup.com/4-test-performance/) |
-| 6 | Studied FSx operational topics: CloudWatch monitoring, data deduplication, shadow copies, sessions and open files, user quotas, throughput and storage capacity changes, and cleanup. Compared the purpose of these controls and reviewed which resources and outputs a lab operator should check. | 10/16/2026 | 10/16/2026 | FCJ Lab25: [monitor performance](https://000025.awsstudygroup.com/5-monitor-performance/), [data deduplication](https://000025.awsstudygroup.com/6-enable-data-dedup/), [shadow copies](https://000025.awsstudygroup.com/7-enable-shadow-copies/), [sessions and open files](https://000025.awsstudygroup.com/8-manage-user-sessions-open-files/), [quotas](https://000025.awsstudygroup.com/9-enable-quotas/), [scale throughput](https://000025.awsstudygroup.com/11-scale-throughput-capacity/), [scale storage](https://000025.awsstudygroup.com/12-scale-storage-capacity/), [clean up](https://000025.awsstudygroup.com/13-delete-environment/); [AWS deduplication guidance](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/managing-data-dedup.html), [storage capacity](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/managing-storage-configuration.html), [throughput capacity](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/managing-throughput-capacity.html) |
+| 2 | Joined team brainstorming on the problem, intended users, and workshop goals. Discussed a minimal demo flow that others could reproduce; studied the Shared Responsibility Model to connect the team's responsibilities with its use of cloud services. | 10/12/2026 | 10/12/2026 | [Shared Responsibility Model](https://www.youtube.com/watch?v=tsobAlSg19g); [AWS Well-Architected](https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html) |
+| 3 | Discussed the PoC scope, reusable parts of the existing system, and ideas to defer. Studied IAM, policies, and roles; distinguished AWS resource permissions from application user roles to prepare questions about security. | 10/13/2026 | 10/13/2026 | [IAM](https://www.youtube.com/watch?v=N_vlJGAqZxo), [Create IAM Policy](https://www.youtube.com/watch?v=XXjEpIRWJBk), [Create IAM Role](https://www.youtube.com/watch?v=pJWANviu8QM); [IAM best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) |
+| 4 | Outlined an initial deployment approach and the data flow between the backend and the AI component. Reviewed EC2/S3 concepts and how workloads use IAM roles; identified dependencies to discuss further with the lead, backend contributors, and AI owner. | 10/14/2026 | 10/14/2026 | [Create IAM role — Lab48](https://www.youtube.com/watch?v=j8Gj2DJtZUE), [Using IAM role](https://www.youtube.com/watch?v=Z0liKVSjt_Q); [IAM best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html); [project repository](https://github.com/nhatnhm1405/fcaj-hackathon-system) |
+| 5 | Discussed work allocation and received direction for Backend 2, focusing on deployment, messaging, and cost inputs. Reviewed cost optimization; identified information to clarify, such as Region, operating schedule, and workload, before preparing an estimate. | 10/15/2026 | 10/15/2026 | [AWS Cost Optimization and Working with AWS Support](https://www.youtube.com/watch?v=IY61YlmXQe8); [AWS Budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html) |
+| 6 | Consolidated the workshop plan, work areas, and dependency order; prepared the items to continue in Week 6. Reviewed my responsibilities, required outputs, and documentation outline to connect learning with the team's work. | 10/16/2026 | 10/16/2026 | [Project repository](https://github.com/nhatnhm1405/fcaj-hackathon-system); [AWS Well-Architected](https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html) |
 
 ### Week 5 Achievements
 
-- Explained the main steps in VM Import/Export and the roles of a virtual disk, an AMI, an EC2 instance, S3, and the service role.
-- Distinguished the permissions used by the caller from the permissions granted to VM Import/Export, and identified why `iam:PassRole` and the role trust relationship matter.
-- Refreshed the S3 File Gateway concepts from Week 4 and compared its file access model with FSx for Windows File Server.
-- Compared FSx deployment and storage options, including Active Directory integration, Multi-AZ, SSD, and HDD.
-- Summarized how to interpret performance measurements and use monitoring to investigate a file workload; no sample benchmark values were recorded as personal measurements.
-- Distinguished data deduplication, shadow copies, quotas, and capacity scaling by the operational problem each addresses.
+- Began workshop preparation with the team and clarified the problem focus and purpose of the initial demo flow.
+- Distinguished PoC priorities from possible extensions to focus on an achievable scope.
+- Outlined an initial approach and identified deployment, data, and AI coordination questions that needed further clarification.
+- Strengthened my understanding of IAM policies, roles, and application permissions; related access requirements to the proposed components.
+- Received direction for Backend 2 and identified the inputs needed for the technical proposal and cost estimate.
+- Consolidated the initial plan, dependencies, and transition into Week 6 work.
 
 ### Lessons Learned
 
-- I learned to check operating system and boot-mode compatibility before assessing a VM import. AWS VM Import/Export supports both UEFI and Legacy BIOS, subject to the source image and operating system requirements.
-- I distinguished the permissions of the user or role making an import/export request from the service role assumed by VM Import/Export. A correct service role alone does not grant the caller permission to pass that role.
-- I learned to follow an import or export task through its output and then assess whether the resulting image or instance meets the intended use; a task status by itself does not establish application readiness.
-- I distinguished SMB/NFS access through S3 File Gateway from the S3 objects used as its backing storage. Changes made directly in S3 may require the gateway's cached object inventory to be refreshed.
-- I learned to select FSx storage and throughput settings according to workload needs. A short benchmark is a measurement under its test conditions, not a guarantee of sustained application performance.
-- I distinguished shadow copies, which provide access to earlier file versions when available, from file system backups. Quotas and deduplication address different storage-management needs.
-- I learned that file system storage capacity and throughput are separate settings. Storage capacity increases are not reversible, so changes and remaining resources should be reviewed with cost and cleanup requirements in mind.
+- I learned to agree on the problem and demo scope before selecting many AWS services. The approach should support the workshop goals and fit the team's available time.
+- I learned that an architecture diagram should help the team explain data flow, component responsibilities, and decisions that still need confirmation.
+- I distinguished AWS resource permissions from application user roles. When planning access, I need to identify which component performs each action and which permissions it requires.
+- I understood the role of IAM roles for workloads and the principle of least privilege. Studying policies and roles helped me ask more specific questions about resource access.
+- I learned that a cost estimate needs explicit assumptions about resources, Region, workload, and operating schedule. Credits also need confirmation before being included in the calculation.
+- I learned that task allocation needs outputs, dependencies, and completion criteria so that the parts can be integrated. I prioritized learning that directly supports my responsibilities.
 
 ### Next Steps
 
-- Continue with the Week 6 learning topics and apply the relevant storage and access-control concepts when the project scope is available.
-- Project work for Week 5: **[TO BE COMPLETED: add the project scope, work performed, dates, and actual outcome or artifact.]**
+- Start Backend 2 work in Week 6: examine the existing Dockerfile, Docker Compose configuration, and workflow; develop the deployment, pipeline, and rollback proposal.
+- Clarify the job/result contract and SQS flow with the AI owner; prepare an estimate with assumptions, pricing sources, and questions for the lead.
+- Follow [Issue #7](https://github.com/nhatnhm1405/fcaj-hackathon-system/issues/7), created on October 19, 2026, for the formal task scope and record review outcomes in Week 6.
+- Add personal details: **[TO BE COMPLETED: the official workshop title, my specific idea or contribution, and links to notes or diagrams if available.]**
