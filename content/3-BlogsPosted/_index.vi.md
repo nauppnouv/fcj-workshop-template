@@ -1,22 +1,23 @@
 ---
-title: "Các bài blogs đã đăng"
-date: 2024-01-01
+title: "Các bài blog đã đăng"
+date: 2026-10-22
 weight: 3
 chapter: false
 pre: " <b> 3. </b> "
 ---
 
-{{% notice warning %}}  
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+Phần này giới thiệu các bài viết kỹ thuật tôi đã chia sẻ với cộng đồng [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj). Mỗi bài có nội dung, liên kết bài đăng gốc và nguồn tham khảo.
 
-Tại đây sẽ là phần liệt kê, giới thiệu các blogs mà các bạn đã đăng trên [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj). Ví dụ:
+### [Blog 1 - Một message SQS, vì sao có thể gửi email nhiều lần?](3.1-Blog1/)
 
-###  [Blog 1 - SESSION POLICIES TRONG AMAZON EKS POD IDENTITY](3.1-Blog1/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+**Ngày đăng:** 22/10/2026 · [Bài đăng gốc trên Facebook](https://www.facebook.com/share/p/1CJMAYWQBf/)
 
-###  [Blog 2 - ...](3.2-Blog2/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+Bài viết giải thích cách visibility timeout của Amazon SQS có thể khiến message được xử lý lại khi worker vẫn đang chạy. Tình huống timeout 30 giây và tác vụ 45 giây minh họa nguy cơ gửi email trùng, từ đó trình bày các lưu ý về gia hạn timeout, idempotency và dead-letter queue.
 
-###  [Blog 3 - ...](3.3-Blog3/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+### Blog 2 - Chưa cập nhật
+
+Nội dung và thông tin bài đăng sẽ được bổ sung khi có.
+
+### Blog 3 - Chưa cập nhật
+
+Nội dung và thông tin bài đăng sẽ được bổ sung khi có.

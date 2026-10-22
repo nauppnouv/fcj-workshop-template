@@ -1,22 +1,23 @@
 ---
 title: "Blogs Posted"
-date: 2024-01-01
+date: 2026-10-22
 weight: 3
 chapter: false
 pre: " <b> 3. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+This section introduces my technical blog posts shared with the [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj) community. Each entry includes the article, its original post link, and reference sources.
 
-This section will list and introduce the blogs you have posted to [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj). For example:
+### [Blog 1 - One SQS message: why can it send an email more than once?](3.1-Blog1/)
 
-###  [Blog 1 - SESSION POLICIES IN AMAZON EKS POD IDENTITY](3.1-Blog1/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+**Published:** October 22, 2026 · [Original Facebook post (Vietnamese)](https://www.facebook.com/share/p/1CJMAYWQBf/)
 
-###  [Blog 2 - ...](3.2-Blog2/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+This article explains how Amazon SQS visibility timeout can allow a message to be processed again while a worker is still running. A 30-second timeout and a 45-second task illustrate the risk of duplicate emails, followed by practical considerations for timeout extension, idempotency, and dead-letter queues.
 
-###  [Blog 3 - ...](3.3-Blog3/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+### Blog 2 - Not yet updated
+
+The article and publication details will be added when available.
+
+### Blog 3 - Not yet updated
+
+The article and publication details will be added when available.
