@@ -5,53 +5,41 @@ weight: 1
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+During Week 8 (November 2–6, 2026), I worked with the FCAJ Hackathon System team on the proof-of-concept (PoC) architecture, took inventory of the AWS environment, and prepared the Backend 2 release. I then recorded which parts of the frontend, API, and worker flow had been tested.
 
-### Week 8 Objectives:
+### Week 8 Objectives
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Clarify how the static frontend, API, and application storage are separated.
+- Compare the AWS resources in Singapore with the CloudFormation template and identify gaps before deployment.
+- Prepare a release that can be traced to a specific source revision and Docker image.
+- Check HTTPS, frontend delivery, and message transport using a mock worker.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Completed Daily Worklog
 
+| Day | Work Completed | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 2 | Studied the proposed architecture with the team. Traced the frontend through CloudFront to a private S3 bucket and the API through Caddy to the Spring Boot backend on EC2 and then RDS. Reviewed how S3 Block Public Access and CloudFront Origin Access Control (OAC) work with the bucket policy. Distinguished frontend assets from application files and AI results. | 11/02/2026 | 11/02/2026 | [Issue #14](https://github.com/nhatnhm1405/fcaj-hackathon-system/issues/14), [Amazon S3](https://www.youtube.com/watch?v=_yunukwcAwc), [S3 Block Public Access](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html), [CloudFront OAC](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html) |
+| 3 | Checked access through the AWS tooling with GPT/Codex and took inventory of the Singapore PoC: the CloudFormation stack, S3, the SQS job and result queues and their dead-letter queues, ECR, logging, EC2/SSM, and RDS. Compared the resources with the template, noting gaps in runtime permissions, image availability, and logs, as well as a visibility timeout mismatch between the queues and the template. | 11/03/2026 | 11/03/2026 | [Issue #14](https://github.com/nhatnhm1405/fcaj-hackathon-system/issues/14), [SSM Run Command](https://docs.aws.amazon.com/systems-manager/latest/userguide/run-command.html), [SQS visibility timeout](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html) |
+| 4 | Studied the release design with the team. Traced the path from a tested source revision to a Docker image in ECR, then from an SSM command to EC2 pulling that exact digest. Identified checks for RDS before startup, frontend delivery through CloudFront, the API over HTTPS, anonymous access to S3, and SQS/S3 transport with a mock worker. | 11/04/2026 | 11/04/2026 | [Issue #14](https://github.com/nhatnhm1405/fcaj-hackathon-system/issues/14), [ECR pull by digest](https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-pull-ecr-image.html), [SSM Run Command](https://docs.aws.amazon.com/systems-manager/latest/userguide/run-command.html), [CloudFront checks](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/GettingStarted.SimpleDistribution.html), [SQS visibility timeout](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html) |
+| 5 | Prepared the PoC release steps for deploying a digest-pinned ECR image through SSM with an RDS check before backend startup. Compared the running candidate's revision and image against the deployment record. Prepared frontend delivery through private S3 and CloudFront and the Caddy HTTPS configuration for the API. | 11/05/2026 | 11/05/2026 | [Public PoC release report](https://github.com/nhatnhm1405/fcaj-hackathon-system/blob/9caeef3572a3c5eb92c5b3dc8d98c6f728621b85/docs/report/issue-14-execution-status-2026-11-05.md), [PR #24](https://github.com/nhatnhm1405/fcaj-hackathon-system/pull/24) |
+| 6 | Recorded checks of HTTPS, static frontend files, and browser access without signing in. Checked that a Java mock worker could receive a job through SQS, read and write S3, and send a result. Updated the draft PR documentation and removed environment identifiers from the public report. This check covered SQS/S3 transport; signed-in workflows and the real AI worker remained unverified. | 11/06/2026 | 11/06/2026 | [Public validation report](https://github.com/nhatnhm1405/fcaj-hackathon-system/blob/9caeef3572a3c5eb92c5b3dc8d98c6f728621b85/docs/report/issue-14-execution-status-2026-11-05.md), [PR #24](https://github.com/nhatnhm1405/fcaj-hackathon-system/pull/24) |
 
-### Week 8 Achievements:
+**Weekend note (November 7):** Inspected Docker Desktop storage and removed one old Maven image after checking that no container referenced it. Kept the containers and volumes. [Docker disk usage](https://docs.docker.com/reference/cli/docker/system/df/)
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Week 8 Achievements
 
-* Successfully created and configured an AWS Free Tier account.
+- Clarified the frontend and API paths with the team and identified checks for the release.
+- Recorded the AWS PoC inventory and the configuration differences to address before running the backend.
+- Prepared deployment by image digest and documented the candidate revision and RDS check.
+- Recorded HTTPS and frontend checks and a Java mock round trip through SQS/S3 in draft PR #24.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+### Lessons Learned
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+- A CloudFormation inventory tells me which resources exist. Application readiness also depends on the image, runtime permissions, and database access.
+- I can trace what EC2 runs by recording the source revision and image digest. ECR stores the image; SSM sends the deployment command.
+- A successful mock round trip confirms the messaging and storage path tested. Signing in, completing a business workflow, and processing a job with the real AI worker each need their own checks.
 
-* Used AWS CLI to perform basic operations such as:
+### Next Steps
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Review PR #24 with the team, clarify access and release prerequisites, and plan the remaining API and signed-in workflow checks in Week 9.
