@@ -5,55 +5,55 @@ weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+Trong Tuần 9 (09–13/11/2026), tôi tiếp tục công việc trên bản chứng minh ý tưởng (PoC) của FCAJ Hackathon System. Tôi rà thay đổi của Backend 2, thiết lập quyền truy cập AWS cho team và kiểm tra API sau khi chuyển luồng HTTPS sang Application Load Balancer.
 
-### Mục tiêu tuần 9:
+### Mục tiêu tuần 9
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Rà pull request của Backend 2 và ghi lại phạm vi kiểm thử.
+- Cấp quyền truy cập AWS theo nhiệm vụ của từng thành viên.
+- Xác minh luồng HTTPS qua Application Load Balancer và phản hồi API.
+- Xác minh bước build Docker image trong GitHub Actions và xác định các mục còn cần kiểm khi phát hành và nghiệm thu.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các công việc đã hoàn thành trong tuần
 
+| Thứ | Công việc đã hoàn thành | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | Đối chiếu phạm vi Backend 2 trong Issue #17 với quy ước trao đổi dữ liệu qua SQS/S3 và kiểm lại CI, kiểm thử triển khai và cơ sở dữ liệu của PR #24. Chuyển PR từ Draft sang Ready for review. Maintainer đã merge PR vào `develop`. Worker Java giả lập đã kiểm đường truyền qua SQS/S3, còn worker AI bằng Python vẫn cần kiểm thử đầu cuối. | 09/11/2026 | 09/11/2026 | [Issue #17][issue17], [PR #24][pr24] |
+| 3 | Rà GitHub environment, OpenID Connect (OIDC), quyền phát hành và các mục cần kiểm trên EC2. Thiết lập quyền truy cập riêng qua AWS Identity and Access Management (IAM) cho bốn thành viên theo nhiệm vụ và gửi hướng dẫn riêng cho từng người. | 10/11/2026 | 10/11/2026 | [Phản hồi review PR #24][lead], [Thực hành tốt về IAM][iam], [GitHub Actions OIDC][oidc] |
+| 4 | Cấp quyền xem dịch vụ AWS và log theo phạm vi cho team. Thiết lập Application Load Balancer (ALB) trong VPC hiện có, xác minh chứng chỉ AWS Certificate Manager (ACM) qua DNS và trỏ tên miền API về ALB. Kiểm tra HTTPS, trạng thái target, phản hồi API, CORS và CSRF. Hoàn thiện PR #28 để build và chuyển Docker image dưới dạng artifact giữa các job. Bốn job CI đều đạt tại revision `ff36d57`. Maintainer đã merge PR. | 11/11/2026 | 11/11/2026 | [PR #28][pr28], [Kết quả CI][ci28], [Video về Load Balancer][v-lb], [Video về Security Group][v-sg], [Security group của ALB][alb-sg], [Xác minh ACM qua DNS][acm] |
+| 5 | Cùng team nghiên cứu quy trình phát hành sau merge. Rà cách đối chiếu revision mã nguồn và image ID sau khi nạp lại archive, rồi dùng digest trong Amazon Elastic Container Registry (ECR) để chỉ định image EC2 sẽ kéo. Ghi lại nhánh được phép phát hành, GitHub environment, OIDC và quyền AWS Systems Manager (SSM) trong checklist phát hành. | 12/11/2026 | 12/11/2026 | [PR #28][pr28], [Artifact trong GitHub Actions][artifact], [GitHub Actions OIDC][oidc], [Kéo image ECR theo digest][ecr], [SSM Run Command][ssm] |
+| 6 | Cùng team rà checklist nghiệm thu và đánh dấu các mục đã kiểm cho HTTPS, trạng thái target và phản hồi API. Xác định các kịch bản còn cần kiểm cho đăng nhập OAuth trên trình duyệt và luồng AI worker, từ nhận job qua SQS, đọc dữ liệu đầu vào từ S3 đến trả kết quả. | 13/11/2026 | 13/11/2026 | [PR #24][pr24], [Issue #17][issue17], [PR #28][pr28] |
 
-### Kết quả đạt được tuần 9:
+### Kết quả đạt được tuần 9
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Chuẩn bị PR #24 để review và ghi lại các lượt kiểm làm căn cứ cho việc merge phần Backend 2.
+- Thiết lập quyền truy cập cho bốn thành viên và giới hạn quyền chung ở phạm vi xem dịch vụ và log.
+- Xác minh luồng HTTPS qua ALB tới target EC2 và kiểm tra phản hồi API.
+- Xác minh bước build Docker image trong CI và ghi lại các mục còn cần kiểm khi phát hành lên AWS và nghiệm thu đầu cuối.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+### Bài học rút ra sau khi học
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- Thành viên, GitHub Actions và workload trên EC2 cần các quyền khác nhau. Tôi rút ra rằng cần đối chiếu chính sách tin cậy OIDC với environment của workflow và kiểm tra nhánh nào được phép triển khai vào đó. [Thực hành tốt về IAM][iam], [GitHub Actions OIDC][oidc]
+- Tôi hiểu security group kiểm soát kết nối từ ALB đến target. CNAME xác minh ACM chứng minh quyền kiểm soát tên miền, còn bản ghi DNS của API đưa lưu lượng đến ALB. [Security group của ALB][alb-sg], [Xác minh ACM qua DNS][acm]
+- Tôi học được cách truy vết image từ revision mã nguồn đến image ID trong archive và digest trong ECR. SSM gửi lệnh triển khai, sau đó EC2 kéo image theo digest. [Artifact trong GitHub Actions][artifact], [Kéo image ECR theo digest][ecr], [SSM Run Command][ssm]
+- Target healthy và API phản hồi thành công xác nhận các phần cụ thể của hệ thống. Tôi xác định các lượt kiểm riêng cho đăng nhập và cho worker AI bằng Python xử lý job rồi trả kết quả mong đợi. [PR #24][pr24], [Issue #17][issue17]
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+### Bước tiếp theo
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+- Xác nhận quyền phát hành và thiết lập environment trước khi chạy workflow sau merge. Thực hiện các kịch bản đăng nhập trên trình duyệt và xử lý job bằng AI worker, rồi ghi lại kết quả.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+[issue17]: https://github.com/nhatnhm1405/fcaj-hackathon-system/issues/17
+[pr24]: https://github.com/nhatnhm1405/fcaj-hackathon-system/pull/24
+[lead]: https://github.com/nhatnhm1405/fcaj-hackathon-system/pull/24#issuecomment-6730727583
+[pr28]: https://github.com/nhatnhm1405/fcaj-hackathon-system/pull/28
+[ci28]: https://github.com/nhatnhm1405/fcaj-hackathon-system/actions/runs/42985780436
+[v-lb]: https://www.youtube.com/watch?v=CXU8D3kyxIc
+[v-sg]: https://www.youtube.com/watch?v=B1qxOQLmavQ
+[iam]: https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
+[oidc]: https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-aws
+[alb-sg]: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-update-security-groups.html
+[acm]: https://docs.aws.amazon.com/acm/latest/userguide/dns-validation.html
+[artifact]: https://docs.github.com/en/actions/concepts/workflows-and-actions/workflow-artifacts
+[ecr]: https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-pull-ecr-image.html
+[ssm]: https://docs.aws.amazon.com/systems-manager/latest/userguide/run-command.html
