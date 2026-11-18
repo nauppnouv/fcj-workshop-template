@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-Trong quá trình thực tập, tôi đã tham gia hai sự kiện công nghệ, qua đó tìm hiểu thêm về phát triển Cloud, AI và các thực hành kỹ thuật.
+Trong quá trình thực tập, tôi đã tham gia ba sự kiện công nghệ, qua đó tìm hiểu thêm về phát triển Cloud, AI và các thực hành kỹ thuật.
 
 ### [Event 1: Buildrathon Kickoff](4.1-Event1/)
 &emsp;**Tên sự kiện:** Buildrathon Kickoff: Code the Future with CMC Global
@@ -29,4 +29,15 @@ Trong quá trình thực tập, tôi đã tham gia hai sự kiện công nghệ,
 &emsp;**Vai trò trong sự kiện:** Người tham dự watch party
 
 &emsp;**Nội dung và giá trị:** Theo dõi keynote về ứng dụng AI trong doanh nghiệp, hạ tầng Cloud, invisible engineering và kiểm chứng phần mềm có AI hỗ trợ. Bài học trọng tâm là gắn tốc độ phát triển với quyền truy cập phù hợp, kiểm thử có bằng chứng và trách nhiệm của con người.
+
+### [Event 3: First Cloud AI Journey Meetup](4.3-Event3/)
+&emsp;**Tên sự kiện:** First Cloud AI Journey Meetup
+
+&emsp;**Thời gian:** 09:00–12:00 (UTC+7), ngày 24/10/2026
+
+&emsp;**Địa điểm:** Tầng 26, Bitexco Financial Tower, TP.HCM
+
+&emsp;**Vai trò trong sự kiện:** Người tham dự trực tiếp
+
+&emsp;**Nội dung và giá trị:** Tham dự năm phiên về Voice AI tiếng Việt, chia sẻ tài nguyên với AWS RAM, AWS Security Agent, Amazon Bedrock AgentCore và Kiro Crew. Demo gọi điện sơ tuyển và phần hỏi đáp Kiro Crew minh họa vai trò của độ trễ, bộ nhớ và quyền truy cập trong quy trình sử dụng agent.
 
